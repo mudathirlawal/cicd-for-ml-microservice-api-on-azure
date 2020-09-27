@@ -14,4 +14,3 @@ also demonstrates operationalization of the serverless machine learning app (app
 that serves out predictions (inference) about housing prices through API calls. 
 This project could be extended to any pre-trained machine learning model, such as 
 those for image recognition and data labeling.
-
