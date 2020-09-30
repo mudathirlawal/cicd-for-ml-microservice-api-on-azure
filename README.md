@@ -2,7 +2,7 @@
 [![Build Status](https://dev.azure.com/smartkidshub/ml-microservice-api/_apis/build/status/mudathirlawal.cicd-for-ml-microservice-api-on-azure?branchName=ops)](https://dev.azure.com/smartkidshub/ml-microservice-api/_build/latest?definitionId=1&branchName=ops)
 ![Python application test with Github Actions](https://github.com/mudathirlawal/cicd-for-ml-microservice-api-on-azure/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
 
-Overview:
+# Overview:
 This project implements continous integration and continous delivery pipeline 
 for a Python machine learning API built with the Flask web framework. And the 
 application is deployed into Azure.  
