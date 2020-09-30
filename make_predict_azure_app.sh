@@ -25,4 +25,4 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST https://app.azurewebsites.net:$PORT/predict 
+     -X POST https://sklearnapi.azurewebsites.net:$PORT/predict 
