@@ -3,6 +3,7 @@
 ![Python application test with Github Actions](https://github.com/mudathirlawal/cicd-for-ml-microservice-api-on-azure/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
 
 # Overview
+
 This project implements continous integration and continous delivery pipeline 
 for a Python machine learning API built with the Flask web framework. The 
 application is deployed into Azure.  
@@ -17,3 +18,8 @@ This project also demonstrates operationalization of the serverless machine lear
 app (app.py) that serves out predictions (inference) about housing prices through API 
 calls. This project can be extended to any pre-trained machine learning model, such as 
 those used for image recognition and data labeling.
+
+# Project Plan
+
+[Link to Trello board for this project.](https://trello.com/b/IeN7udTH/ci-cd-for-ml-microservice-api-on-azure) 
+[Link to spreadsheet that includes the project plan for this project.](https://docs.google.com/spreadsheets/d/1BEQnOTNx_PSh0zwm3Q15BGol5n4bmwO2J6IBVqrMSo0/edit?usp=sharing)
