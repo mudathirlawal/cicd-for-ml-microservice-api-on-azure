@@ -24,4 +24,28 @@ those used for image recognition and data labeling.
 
 ![alt text](/readme-images/building-a-ci-cd-pipeline.png)
 
-## Instructions:
+## Demo
+<TODO: Will add link to Screencast on YouTube>
+
+## Instructions
+
+<TODO: My instructions for running the Python project. How could a user with no context 
+run this project without asking you for any help. Include screenshots with explicit steps 
+to create that work. Will, at least, include the following screenshots:>
+
+1- Project running on Azure App Service
+2- Project cloned into Azure Cloud Shell
+3- Passing tests that are displayed after running the make all command from the Makefile
+4- Output of a test run
+5- Successful deploy of the project in Azure Pipelines. Note the official documentation 
+   should be referred to and double checked as you setup CI/CD.
+6- Running Azure App Service from Azure Pipelines automatic deployment
+7- Successful prediction from deployed flask app in Azure Cloud Shell. Use this file as 
+   a template for the deployed prediction. The output should look similar to this:
+      udacity@Azure:~$ ./make_predict_azure_app.sh
+      Port: 443
+      {"prediction":[20.35373177134412]}
+8- Output of streamed log files from deployed application
+
+## Enhancements
+<TODO: A short description of how to improve the project in the future>
