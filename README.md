@@ -6,9 +6,7 @@
 
 This project implements continous integration and continous delivery pipeline 
 for a Python machine learning API built with the Flask web framework. The 
-application is deployed into Azure.  
-
-![alt text](/readme-images/building-a-ci-cd-pipeline.png)
+application is deployed into Azure.
 
 The pre-trained sklearn model used predicts housing prices in Boston according to 
 several features, such as average rooms in a home, data about highway access, 
@@ -23,3 +21,7 @@ those used for image recognition and data labeling.
 
 - [Link to Trello board for this project.](https://trello.com/b/IeN7udTH/ci-cd-for-ml-microservice-api-on-azure)
 - [Link to spreadsheet that includes the project plan for this project.](https://docs.google.com/spreadsheets/d/1BEQnOTNx_PSh0zwm3Q15BGol5n4bmwO2J6IBVqrMSo0/edit?usp=sharing)
+
+![alt text](/readme-images/building-a-ci-cd-pipeline.png)
+
+## Instructions:
