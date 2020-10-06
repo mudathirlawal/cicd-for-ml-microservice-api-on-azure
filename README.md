@@ -100,7 +100,7 @@ into your [GitHub account.](https://www.github.com/login)
 
    From the first line of output from the previous `az webapp up` command, copy the name 
    of your resource group, which is similar to 
-   [your-name]_rg_Linux_[your-region]
+   `{your-name}_rg_Linux_{your-region}`
 
 ### Bash: Run app in a virtual environment within Azure Cloud Shell
 
