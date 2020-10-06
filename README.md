@@ -84,19 +84,19 @@ git clone https://github.com/<your-alias>/cicd-for-ml-microservice-api-on-azure
 ```
 
 Replace <your-alias> with the name of the GitHub account you used to fork the repository.
+   
+#### Tip
 
-Tip
+> To paste into the Cloud Shell, use `Ctrl+Shift+V`, or right-click and select Paste from 
+> the context menu.
 
-To paste into the Cloud Shell, use `Ctrl+Shift+V`, or right-click and select Paste from the 
-context menu.
+#### Note
 
-Note
-
-The Cloud Shell is backed by an Azure Storage account in a resource group called 
-cloud-shell-storage-<your-region>. That storage account contains an image of the 
-Cloud Shell's file system, which stores the cloned repository. There is a small 
-cost for this storage. You can delete the storage account at the end of this 
-article, along with other resources you create.
+> The Cloud Shell is backed by an Azure Storage account in a resource group called 
+> cloud-shell-storage-<your-region>. That storage account contains an image of the 
+> Cloud Shell's file system, which stores the cloned repository. There is a small 
+> cost for this storage. You can delete the storage account at the end of this 
+> article, along with other resources you create.
 
 ## Enhancements
 <TODO: A short description of how to improve the project in the future>
