@@ -99,9 +99,10 @@ into your [GitHub account.](https://www.github.com/login)
    > up command then tries to create a Windows app service plan, and fails.
 
    From the first line of output from the previous `az webapp up` command, 
-   copy the name of your resource group, 
-   which is similar to 
-   `{your-name}_rg_Linux_{your-region}`
+   copy the name of your resource group, which is similar to:
+   ```
+   {your-name}_rg_Linux_{your-region}
+   ```
 
 Enter the following command, using your resource group name, your app service name, and your 
 startup file or command:
