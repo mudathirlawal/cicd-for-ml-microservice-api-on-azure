@@ -113,7 +113,7 @@ az webapp config set -g <your-resource-group> -n <your-appservice>
    
 Again, when the command completes, it shows JSON output in the Cloud Shell.
 
-To see the running app, open a browser and go to http://<your-appservice>.azurewebsites.net. 
+To see the running app, open a browser and go to http:///<your-appservice/>/.azurewebsites.net. 
 If you see a generic page, wait a few seconds for the App Service to start, and refresh the page.
 
 ### Bash: Run app in a virtual environment within Azure Cloud Shell
