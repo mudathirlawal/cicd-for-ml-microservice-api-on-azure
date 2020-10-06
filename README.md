@@ -98,8 +98,9 @@ into your [GitHub account.](https://www.github.com/login)
    > to run the command from a folder that doesn't contain a Python app. The az webapp 
    > up command then tries to create a Windows app service plan, and fails.
 
-   From the first line of output from the previous `az webapp up` command, copy the name 
-   of your resource group, which is similar to 
+   From the first line of output from the previous `az webapp up` command, 
+   copy the name of your resource group, 
+   which is similar to 
    `{your-name}_rg_Linux_{your-region}`
 
 Enter the following command, using your resource group name, your app service name, and your 
@@ -113,8 +114,9 @@ az webapp config set -g <your-resource-group> -n <your-appservice>
    
 Again, when the command completes, it shows JSON output in the Cloud Shell.
 
-To see the running app, open a browser and go to http:///<your-appservice/>/.azurewebsites.net. 
-If you see a generic page, wait a few seconds for the App Service to start, and refresh the page.
+To see the running app, open a browser and go to http://[your-appservice].azurewebsites.net. 
+If you see a generic page, wait a few seconds for the App Service to start, and refresh the 
+page.
 
 ### Bash: Run app in a virtual environment within Azure Cloud Shell
 
