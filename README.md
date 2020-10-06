@@ -68,20 +68,18 @@ deployment of the microservice API.
 1. Sign in to the Azure portal at https://portal.azure.com.
 2. Open the Azure CLI by selecting the Cloud Shell button on the portal's toolbar:
 
-![alt text](/readme-images/azure-cloud-shell-button.png)
+   ![alt text](/readme-images/azure-cloud-shell-button.png)
 
 3. The Cloud Shell appears along the bottom of the browser. Select Bash from the dropdown:
 
-![alt text](/readme-images/azure-cloud-shell-interface.png)
+   ![alt text](/readme-images/azure-cloud-shell-interface.png)
 
-4. [On GitHub,](https://www.github.com/login), fork the repository https://github.com/mudathirlawal/cicd-for-ml-microservice-api-on-azure.git
+4. [On GitHub,](https://www.github.com/login) fork the repository https://github.com/mudathirlawal/cicd-for-ml-microservice-api-on-azure.git
 into your [GitHub account.](https://www.github.com/login)
 
 5. In the Cloud Shell, clone the repository using `git clone`. As in:
-
-```bash
-git clone https://github.com/<your-alias>/cicd-for-ml-microservice-api-on-azure
-```
+   
+    git clone https://github.com/<your-alias>/cicd-for-ml-microservice-api-on-azure
 
 Replace <your-alias> with the name of the GitHub account you used to fork the repository.
 
