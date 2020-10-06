@@ -80,26 +80,26 @@ into your [GitHub account.](https://www.github.com/login)
    
 2. In the Cloud Shell, run `az webapp up` to create an App Service and initially deploy the API.  
    
-#### Bash:
+   #### Bash:
 
-```shell
-az webapp up -n <your-appservice>
-```
+   ```shell
+   az webapp up -n [your-appservice]
+   ```
 
-> Change <your-appservice> to a name for your app service that's unique across Azure. 
-> Typically, you use a personal or company name along with an app identifier, such as 
-> <your-name>-flaskpipelines. The app URL becomes <your-appservice>.azurewebsites.net.
+   > Change [your-appservice] to a name for your app service that's unique across Azure. 
+   > Typically, you use a personal or company name along with an app identifier, such as 
+   > [your-name]-flaskpipelines. The app URL becomes [your-appservice].azurewebsites.net.
 
-  When the command completes, it shows JSON output in the Cloud Shell.
+     When the command completes, it shows JSON output in the Cloud Shell.
 
-#### Tip
+   #### Tip
 
-> If you encounter a "Permission denied" error with a .zip file, you may have tried
-> to run the command from a folder that doesn't contain a Python app. The az webapp 
-> up command then tries to create a Windows app service plan, and fails.
+   > If you encounter a "Permission denied" error with a .zip file, you may have tried
+   > to run the command from a folder that doesn't contain a Python app. The az webapp 
+   > up command then tries to create a Windows app service plan, and fails.
 
-From the first line of output from the previous `az webapp up` command, copy the name 
-of your resource group, which is similar to <your-name>_rg_Linux_<your-region>.
+   From the first line of output from the previous `az webapp up` command, copy the name 
+   of your resource group, which is similar to [your-name]_rg_Linux_[your-region].
 
 ### Bash: Run app in a virtual environment within Azure Cloud Shell
 
