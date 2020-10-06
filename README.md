@@ -25,6 +25,7 @@ those used for image recognition and data labeling.
 ![alt text](/readme-images/building-a-ci-cd-pipeline.png)
 
 ## Demo
+
 <TODO: Will add link to Screencast on YouTube>
 
 ## Instructions
@@ -50,10 +51,10 @@ into your [GitHub account.](https://www.github.com/login)
 
 5. In the Cloud Shell, clone the repository using `git clone`. As in:
 
-```bash
-git clone https://github.com/<your-alias>/cicd-for-ml-microservice-api-on-azure
-```
-Replace <your-alias> with the name of the GitHub account you used to fork the repository.
+   ```bash
+   git clone https://github.com/<your-alias>/cicd-for-ml-microservice-api-on-azure
+   ```
+   Replace <your-alias> with the name of the GitHub account you used to fork the repository.
 
 6. Execute `cd cicd-for-ml-microservice-api-on-azure`
    
