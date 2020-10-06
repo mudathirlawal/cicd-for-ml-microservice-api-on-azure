@@ -69,9 +69,18 @@ into your [GitHub account.](https://www.github.com/login)
    > cost for this storage. You can delete the storage account at the end of this 
    > article, along with other resources you create.
    
-6. Execute `cd cicd-for-ml-microservice-api-on-azure`
+### Provision the target Azure App Service
+
+1. In the Cloud Shell, change directories into the repository folder that has the Flask 
+   app, so the `az webapp up` command will recognize the app as Python. Then execute: 
    
-### Mac/Linux: Run app in a virtual environment
+   ```shell
+   cd cicd-for-ml-microservice-api-on-azure
+   ```
+   
+2. In the Cloud Shell, run `az webapp up` to create an App Service and initially deploy the API.  
+   
+### Bash: Run app in a virtual environment within Azure Cloud Shell
 
 ```shell
 sudo apt-get install python3-venv  # If needed 
@@ -82,7 +91,7 @@ export set FLASK_APP=app.webapp
 python3 -m flask run
 ```
 
-### Windows: Run app in a virtual environment
+### PowerShell: Run app in a virtual environment within Azure Cloud Shell
 
 ```PowerShell
 py -3 -m venv .env
@@ -94,8 +103,6 @@ python -m flask run
 
 Open a browser and navigate to http://localhost:5000 to view the app. When you are 
 finished, close the browser, and stop the Flask server with Ctrl+C.
-
-### Provision the target Azure App Service
 
 ## Enhancements
 <TODO: A short description of how to improve the project in the future>
