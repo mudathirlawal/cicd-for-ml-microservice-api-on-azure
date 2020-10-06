@@ -31,25 +31,29 @@ those used for image recognition and data labeling.
 
 ### Create a repository for the app code
 
-- git clone https://github.com/mudathirlawal/cicd-for-ml-microservice-api-on-azure.git
-- cd cicd-for-ml-microservice-api-on-azure
+```
+git clone https://github.com/mudathirlawal/cicd-for-ml-microservice-api-on-azure.git
+cd cicd-for-ml-microservice-api-on-azure
+```
 
 ### Mac/Linux: Run app in a virtual environment
-
-- sudo apt-get install python3-venv  # If needed 
-- python3 -m venv .env
-- source .env/bin/activate
-- pip install -r requirements.txt
-- export set FLASK_APP=app.webapp
-- python3 -m flask run
+```shell
+sudo apt-get install python3-venv  # If needed 
+python3 -m venv .env
+source .env/bin/activate
+pip install -r requirements.txt
+export set FLASK_APP=app.webapp
+python3 -m flask run
+```
 
 ### Windows: Run app in a virtual environment
-
-- py -3 -m venv .env
-- .env\scripts\activate
-- pip install -r requirements.txt
-- $env:FLASK_APP = "app.webapp"
-- python -m flask run
+```PowerShell
+py -3 -m venv .env
+.env\scripts\activate
+pip install -r requirements.txt
+$env:FLASK_APP = "app.webapp"
+python -m flask run
+```
 
 Open a browser and navigate to http://localhost:5000 to view the app. When you are 
 finished, close the browser, and stop the Flask server with Ctrl+C.
