@@ -64,7 +64,7 @@ into your [GitHub account.](https://www.github.com/login)
    #### Note
 
    > The Cloud Shell is backed by an Azure Storage account in a resource group called 
-   > cloud-shell-storage-<your-region>. That storage account contains an image of the 
+   > cloud-shell-storage-[your-region]. That storage account contains an image of the 
    > Cloud Shell's file system, which stores the cloned repository. There is a small 
    > cost for this storage. You can delete the storage account at the end of this 
    > article, along with other resources you create.
@@ -80,6 +80,27 @@ into your [GitHub account.](https://www.github.com/login)
    
 2. In the Cloud Shell, run `az webapp up` to create an App Service and initially deploy the API.  
    
+#### Bash:
+
+```shell
+az webapp up -n <your-appservice>
+```
+
+> Change <your-appservice> to a name for your app service that's unique across Azure. 
+> Typically, you use a personal or company name along with an app identifier, such as 
+> <your-name>-flaskpipelines. The app URL becomes <your-appservice>.azurewebsites.net.
+
+  When the command completes, it shows JSON output in the Cloud Shell.
+
+#### Tip
+
+> If you encounter a "Permission denied" error with a .zip file, you may have tried
+> to run the command from a folder that doesn't contain a Python app. The az webapp 
+> up command then tries to create a Windows app service plan, and fails.
+
+From the first line of output from the previous `az webapp up` command, copy the name 
+of your resource group, which is similar to <your-name>_rg_Linux_<your-region>.
+
 ### Bash: Run app in a virtual environment within Azure Cloud Shell
 
 ```shell
