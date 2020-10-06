@@ -31,35 +31,6 @@ those used for image recognition and data labeling.
 
 ### Create a repository for the app code
 
-```
-git clone https://github.com/mudathirlawal/cicd-for-ml-microservice-api-on-azure.git
-cd cicd-for-ml-microservice-api-on-azure
-```
-
-### Mac/Linux: Run app in a virtual environment
-```shell
-sudo apt-get install python3-venv  # If needed 
-python3 -m venv .env
-source .env/bin/activate
-pip install -r requirements.txt
-export set FLASK_APP=app.webapp
-python3 -m flask run
-```
-
-### Windows: Run app in a virtual environment
-```PowerShell
-py -3 -m venv .env
-.env\scripts\activate
-pip install -r requirements.txt
-$env:FLASK_APP = "app.webapp"
-python -m flask run
-```
-
-Open a browser and navigate to http://localhost:5000 to view the app. When you are 
-finished, close the browser, and stop the Flask server with Ctrl+C.
-
-### Provision the target Azure App Service
-
 The quickest way to create an App Service instance is to use the Azure command-line 
 interface (CLI) through the interactive Azure Cloud Shell. In the following steps, 
 you use `az webapp up` to both provision the App Service and perform your first 
@@ -82,8 +53,9 @@ into your [GitHub account.](https://www.github.com/login)
 ```bash
 git clone https://github.com/<your-alias>/cicd-for-ml-microservice-api-on-azure
 ```
-
 Replace <your-alias> with the name of the GitHub account you used to fork the repository.
+
+6. Execute `cd cicd-for-ml-microservice-api-on-azure`
    
 #### Tip
 
@@ -97,6 +69,32 @@ Replace <your-alias> with the name of the GitHub account you used to fork the re
 > Cloud Shell's file system, which stores the cloned repository. There is a small 
 > cost for this storage. You can delete the storage account at the end of this 
 > article, along with other resources you create.
+
+### Mac/Linux: Run app in a virtual environment
+
+```shell
+sudo apt-get install python3-venv  # If needed 
+python3 -m venv .env
+source .env/bin/activate
+pip install -r requirements.txt
+export set FLASK_APP=app.webapp
+python3 -m flask run
+```
+
+### Windows: Run app in a virtual environment
+
+```PowerShell
+py -3 -m venv .env
+.env\scripts\activate
+pip install -r requirements.txt
+$env:FLASK_APP = "app.webapp"
+python -m flask run
+```
+
+Open a browser and navigate to http://localhost:5000 to view the app. When you are 
+finished, close the browser, and stop the Flask server with Ctrl+C.
+
+### Provision the target Azure App Service
 
 ## Enhancements
 <TODO: A short description of how to improve the project in the future>
