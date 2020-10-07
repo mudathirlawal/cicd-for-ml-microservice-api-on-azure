@@ -260,7 +260,14 @@ charge, delete the resource group that begins with __cloud-shell-storage-__.
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+The Machine Learning model used in building this API is pre-trained. Therefore, to further generalize 
+the implementation of this Continous Integration & Continous Deployment process, we could integrate 
+the dataset training stage in the pipeline by employing the Azure Kubernetes Service (AKS) while 
+leveraging relevant tools such as TensorFlow and KubeFlow to simplify the operation. In this architecture, 
+the models will run in AKS clusters backed by GPU-enabled virtual machines.
+
+For further information on this, see [Machine Learning model training with AKS.]
+(https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/machine-learning-with-aks)
 
 ## References
 
