@@ -148,8 +148,9 @@ finished, close the browser, and stop the Flask server with Ctrl+C.
 <TODO: A short description of how to improve the project in the future>
 
 ## References
+## References
 
-### Author: Microsoft
-### Year: Microsoft, 2020
-### Accessed on: 7th October, 2020
-### URL or Internet address: <https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops>
+__Author:__ Microsoft
+__Year:__ Microsoft, 2020
+__Accessed on:__ 7th October, 2020
+__URL or Internet address:__ <https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops>
