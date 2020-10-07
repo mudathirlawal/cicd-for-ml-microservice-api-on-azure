@@ -144,4 +144,12 @@ Open a browser and navigate to http://localhost:5000 to view the app. When you a
 finished, close the browser, and stop the Flask server with Ctrl+C.
 
 ## Enhancements
+
 <TODO: A short description of how to improve the project in the future>
+
+## References
+
+### Author: Microsoft
+### Year: Microsoft, 2020
+### Accessed on: 7th October, 2020
+### URL or Internet address: <https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops>
