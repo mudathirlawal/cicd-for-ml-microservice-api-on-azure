@@ -200,7 +200,7 @@ use from the project.
    your fork of the Flask app.
 5. You may be prompted to enter your GitHub password again as a confirmation, and then GitHub 
    prompts you to install the Azure Pipelines extension. On this screen, scroll down to the 
-   *Repository access section*, choose whether to install the extension on all repositories or 
+   __*Repository access section*__, choose whether to install the extension on all repositories or 
    only selected ones, and then select __Approve and install__.
 6. On the Configure your pipeline screen, select __Python to Linux Web App on Azure__. Your new pipeline 
    appears. When prompted, select the __Azure subscription in which you created your Web App__.
@@ -208,10 +208,42 @@ use from the project.
    - Select the Web App
    - Select Validate and configure
 
-   Azure Pipelines creates an azure-pipelines.yml file that defines your CI/CD pipeline as a series 
+   Azure Pipelines creates an `azure-pipelines.yml` file that defines your CI/CD pipeline as a series 
    of stages, Jobs, and steps, where each step contains the details for different tasks and scripts. 
    Take a look at the pipeline to see what it does. Make sure all the default inputs are appropriate 
    for your code.
+
+## Run the pipeline
+
+1. Select __Save__ at upper right in the editor, and in the pop-up window, add a commit message and select __Save__.
+
+2. Select __Run__ on the pipeline editor, and select __Run again__ in the Run pipeline dialog box. Azure Pipelines 
+   queues another pipeline run, acquires an available build agent, and has that build agent run the pipeline.
+   The pipeline takes a few minutes to complete, especially the deployment steps. You should see green 
+   checkmarks next to each of the steps.
+
+   If there's an error, you can quickly return to the `YAML` editor by selecting the vertical dots at upper right 
+   and selecting __Edit pipeline__.
+
+3. From the build page, select the *Azure Web App task* to display its output. To visit the deployed site, 
+   hold down the `Ctrl` key and select *the URL after App Service Application URL*.
+
+#### Important
+
+> If your app fails because of a missing dependency, then your requirements.txt file was not processed during 
+> deployment. This behavior happens if you created the web app directly on the portal rather than using the 
+> `az webapp up` command as directed in this guide.
+
+> The `az webapp up` command specifically sets the build action __SCM_DO_BUILD_DURING_DEPLOYMENT__ to true. If you 
+> provisioned the app service through the portal, however, this action is not automatically set.
+
+> The following steps set the action:
+
+> Open the Azure portal, *select your App Service*, then select __Configuration__.
+> Under the Application Settings tab, select __New Application Setting__.
+> In the popup that appears, set Name to __SCM_DO_BUILD_DURING_DEPLOYMENT__, set Value to true, and select __OK__.
+> Select __Save__ at the top of the Configuration page.
+> Run the pipeline again. Your dependencies should be installed during deployment.
 
 ## Enhancements
 
