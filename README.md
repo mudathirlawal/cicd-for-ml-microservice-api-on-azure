@@ -143,6 +143,30 @@ python -m flask run
 Open a browser and navigate to http://localhost:5000 to view the app. When you are 
 finished, close the browser, and stop the Flask server with Ctrl+C.
 
+## Create an Azure DevOps project and connect to Azure
+
+To deploy to Azure App Service from Azure Pipelines, you need to establish a service 
+connection between the two services.
+
+In a browser, go to `dev.azure.com`. If you don't yet have an account on Azure DevOps, 
+select __Start free and get a free account.__ If you have an account already, select 
+__Sign in to Azure DevOps.__
+
+#### Important
+
+> To simplify the service connection, use the same email address for Azure DevOps as you 
+> use for Azure.
+
+Once you sign in, the browser displays your Azure DevOps dashboard, at the URL 
+`https://dev.azure.com/<your-organization-name>`. An Azure DevOps account can belong to 
+one or more organizations, which are listed on the left side of the Azure DevOps dashboard. 
+If more than one organization is listed, select the one you want to use for this walkthrough. 
+By default, Azure DevOps creates a new organization using the email alias you used to sign in.
+
+A project is a grouping for boards, repositories, pipelines, and other aspects of Azure DevOps. 
+If your organization doesn't have any projects, enter the project name __Flask Pipelines__ under 
+Create a project to get started, and then select __Create project.__
+
 ## Enhancements
 
 <TODO: A short description of how to improve the project in the future>
