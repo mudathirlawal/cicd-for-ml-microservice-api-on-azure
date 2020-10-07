@@ -250,7 +250,7 @@ use from the project.
 To avoid incurring ongoing charges for any Azure resources you created in this walkthrough, such as a B1 App 
 Service Plan, delete the resource group that contains the App Service and the App Service Plan. To delete the 
 resource group from the Azure portal, select __Resource groups__ in the left navigation. In the resource group 
-list, select the __...__ to the right of the resource group you want to delete, select __Delete resource group__, 
+list, select the `...` to the right of the resource group you want to delete, select __Delete resource group__, 
 and follow the prompts.
 
 You can also use `az group delete` in the Cloud Shell to delete resource groups.
@@ -266,10 +266,11 @@ the dataset training stage in the pipeline by employing the Azure Kubernetes Ser
 leveraging relevant tools such as TensorFlow and KubeFlow to simplify the operation. In this architecture, 
 the models will run in AKS clusters backed by GPU-enabled virtual machines.
 
-For further information on this, see [Machine Learning model training with AKS.]
-(https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/machine-learning-with-aks)
+For further information on this, see [Machine Learning model training with AKS.](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/machine-learning-with-aks)
 
 ## References
 
 - Microsoft 2020, accessed 2020-10-07,\
-<https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops>
+  <https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops>
+- Microsoft 2020, accessed 2020-10-07,\n
+  <https://azure.microsoft.com/en-us/services/kubernetes-service/#solution-architectures>
