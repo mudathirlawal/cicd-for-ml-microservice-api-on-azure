@@ -149,7 +149,4 @@ finished, close the browser, and stop the Flask server with Ctrl+C.
 
 ## References
 
-- __Author:__ Microsoft
-- __Year:__ Microsoft, 2020
-- __Accessed on:__ 7th October, 2020
-- __URL:__ <https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops>
+- Microsoft, 2020, Accessed 7th October, 2020, <https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops>
