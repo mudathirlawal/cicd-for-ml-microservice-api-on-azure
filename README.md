@@ -245,6 +245,19 @@ use from the project.
 > Select __Save__ at the top of the Configuration page.
 > Run the pipeline again. Your dependencies should be installed during deployment.
 
+## Clean up resources
+
+To avoid incurring ongoing charges for any Azure resources you created in this walkthrough, such as a B1 App 
+Service Plan, delete the resource group that contains the App Service and the App Service Plan. To delete the 
+resource group from the Azure portal, select __Resource groups__ in the left navigation. In the resource group 
+list, select the __...__ to the right of the resource group you want to delete, select __Delete resource group__, 
+and follow the prompts.
+
+You can also use `az group delete` in the Cloud Shell to delete resource groups.
+
+To delete the storage account that maintains the file system for Cloud Shell, which incurs a small monthly 
+charge, delete the resource group that begins with __cloud-shell-storage-__.
+
 ## Enhancements
 
 <TODO: A short description of how to improve the project in the future>
