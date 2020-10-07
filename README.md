@@ -191,6 +191,28 @@ use from the project.
 > If you need to use an Azure subscription from a different email account, follow the instructions 
 > on [Create an Azure Resource Manager service connection with an existing service principal.](https://https://docs.microsoft.com/en-gb/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal)
 
+## Create a Python-specific pipeline to deploy to App Service
+
+1. From your project page left navigation, select __Pipelines__.
+2. Select __New pipeline__.
+3. On the Where is your code screen, select __GitHub__. You may be prompted to sign into GitHub.
+4. On the Select a repository screen, select the repository that contains your app, such as 
+   your fork of the Flask app.
+5. You may be prompted to enter your GitHub password again as a confirmation, and then GitHub 
+   prompts you to install the Azure Pipelines extension. On this screen, scroll down to the 
+   *Repository access section*, choose whether to install the extension on all repositories or 
+   only selected ones, and then select __Approve and install__.
+6. On the Configure your pipeline screen, select __Python to Linux Web App on Azure__. Your new pipeline 
+   appears. When prompted, select the __Azure subscription in which you created your Web App__.
+
+   - Select the Web App
+   - Select Validate and configure
+
+   Azure Pipelines creates an azure-pipelines.yml file that defines your CI/CD pipeline as a series 
+   of stages, Jobs, and steps, where each step contains the details for different tasks and scripts. 
+   Take a look at the pipeline to see what it does. Make sure all the default inputs are appropriate 
+   for your code.
+
 ## Enhancements
 
 <TODO: A short description of how to improve the project in the future>
