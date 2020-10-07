@@ -167,6 +167,30 @@ A project is a grouping for boards, repositories, pipelines, and other aspects o
 If your organization doesn't have any projects, enter the project name __Flask Pipelines__ under 
 Create a project to get started, and then select __Create project.__
 
+If your organization already has projects, select __New project__ on the organization page. In the 
+Create new project dialog box, enter the project name __Flask Pipelines__, and select Create.
+
+From the new project page, select __Project settings__ from the left navigation.
+
+On the Project Settings page, select __Pipelines__ > __Service connections__, then select __New service__ 
+connection, and then select __Azure Resource Manager__ from the dropdown.
+
+In the Add an Azure Resource Manager service connection dialog box:
+
+Give the connection a name. Make note of the name to use later in the pipeline.
+For Scope level, select __Subscription__.
+Select the subscription for your App Service from the Subscription drop-down list.
+Under Resource Group, select your resource group from the dropdown.
+Make sure the option Allow all pipelines to use this connection is selected, and then select __OK__.
+
+The new connection appears in the Service connections list, and is ready for Azure Pipelines to 
+use from the project.
+
+#### Note
+
+> If you need to use an Azure subscription from a different email account, follow the instructions 
+> on [Create an Azure Resource Manager service connection with an existing service principal.](https://https://docs.microsoft.com/en-gb/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal)
+
 ## Enhancements
 
 <TODO: A short description of how to improve the project in the future>
