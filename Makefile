@@ -6,7 +6,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv tests/*.py
+	python -m pytest -vv --cov=myrepolib tests/*.py
 
 lint:
 	pylint --disable=R,C,W1203,W0702 app.py
