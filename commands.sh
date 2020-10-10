@@ -5,27 +5,28 @@
 # ---------------
 # Project Workflow on a Mac/Linux Machine or Azure Cloud Shell
 cd ~
-sudo apt-get install python3-venv  # If needed
+sudo apt-get install python3-venv  # If needed; not needed in Azure Cloud Shell
 git clone https://github.com/<your-alias>/cicd-for-ml-microservice-api-on-azure
 cd cicd-for-ml-microservice-api-on-azure
-python3 -m venv .cicd-for-ml-microservice-api-on-azure
-source .cicd-for-ml-microservice-api-on-azure/bin/activate
+python3 -m venv ~/.cicd-for-ml-microservice-api-on-azure
+source ~/.cicd-for-ml-microservice-api-on-azure/bin/activate
 make all
 az webapp up -n <your-desired-name-for-the-appservice>
 az webapp config set -g <your-resource-group> \
     -n <your-appservice-name>
 export set FLASK_APP=app.webapp
 python3 -m flask run
-./predict_housing_price.sh
+./make_prediction_on_azure.sh
 # To see the running app, open a browser and 
 # go to http://<your-appservice-name>.azurewebsites.net
 
 # Load Testing:
 # First ensure the microservice is running:
-./predict_housing_price.sh
-locust -f locustfile.py --host=http://localhost:8080
+./make_prediction_on_azure.sh # ./make_prediction_locally.sh, if on Mac/Linux
+locust -f locustfile.py --host=https://<your-service-name>.azurewebsites.net \
+	--no-web -c 1000 -r 100
 # With Locust running we can open the web user interface 
-# at: http://localhost:8089.
+# at: https://<your-service-name>.azurewebsites.net:8089
 
 # Logs: You can inspect the logs from your running application at:
 # https://<app-name>.scm.azurewebsites.net/api/logs/docker
@@ -57,6 +58,15 @@ sudo apt-get install python3-venv  # If needed
 python3 -m venv ~/.cicd-for-ml-microservice-api-on-azure
 source ~/.cicd-for-ml-microservice-api-on-azure/bin/activate
 
+# Load Testing:
+# First ensure the microservice is running:
+./make_prediction_on_azure.sh # ./make_prediction_locally.sh, if on Mac/Linux
+# For running in Azure Cloud Shell
+locust -f locustfile.py --host=https://<your-app-name>.azurewebsites.net
+locust -f locustfile.py --host=http://localhost:8080 # for local run
+# With Locust running we can open the web user interface 
+# at: http://localhost:8089.
+
 # Git
 git clone https://github.com/<your-alias>/cicd-for-ml-microservice-api-on-azure
 git branch
@@ -70,3 +80,6 @@ make all
 make lint
 make test
 make setup
+
+# List Python libraries installed in virtual environment
+pip list
