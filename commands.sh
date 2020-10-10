@@ -28,7 +28,7 @@ locust -f locustfile.py --host=http://localhost:8080
 # at: http://localhost:8089.
 
 # Logs: You can inspect the logs from your running application at:
-https://<app-name>.scm.azurewebsites.net/api/logs/docker
+# https://<app-name>.scm.azurewebsites.net/api/logs/docker
 # Or stream them:
 az webapp log tail
 
