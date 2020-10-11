@@ -25,4 +25,4 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST https://housing-api.azurewebsites.net:$PORT/predict 
+     -X POST https://boston-api.azurewebsites.net:$PORT/predict 
