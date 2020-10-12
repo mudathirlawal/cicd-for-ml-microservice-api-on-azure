@@ -1,6 +1,6 @@
 # CI/CD for Machine Learning Microservice API on Azure
 [![Build Status](https://dev.azure.com/smartkidshub/ml-microservice-api/_apis/build/status/mudathirlawal.cicd-for-ml-microservice-api-on-azure?branchName=ops)](https://dev.azure.com/smartkidshub/ml-microservice-api/_build/latest?definitionId=1&branchName=ops)
-![Python application test with Github Actions](https://github.com/mudathirlawal/cicd-for-ml-microservice-api-on-azure/workflows/Python+application+test+with+Github+Actions/badge.svg?branch=ops)
+![Python application test with Github Actions](https://github.com/mudathirlawal/cicd-for-ml-microservice-api-on-azure/workflows/Python+application+test+with+Github+Actions/badge.svg)
 
 ## Overview
 
