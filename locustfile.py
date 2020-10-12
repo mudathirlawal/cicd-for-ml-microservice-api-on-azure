@@ -1,4 +1,4 @@
-
+import time
 from locust import HttpUser, TaskSet, task, between
 
 class CallerActions(TaskSet):
