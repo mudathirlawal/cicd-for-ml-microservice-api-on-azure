@@ -8,11 +8,11 @@ class CallerActions(TaskSet):
     def index(self):
         self.client.get("/")
 
-    @task
+    @task(3)
     def get_prediction(self):
-        self.client.get("/predictions")
+        self.client.get("/predictions")  
 
 class APIUser(HttpUser):
-    task_set = CallerActions
+    task = CallerActions
     min_wait = 5000
     max_wait = 9000
