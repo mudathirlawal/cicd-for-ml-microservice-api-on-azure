@@ -24,7 +24,7 @@ python3 -m flask run
 # First ensure the microservice is running:
 ./make_prediction_on_azure.sh # ./make_prediction_locally.sh, if on Mac/Linux
 locust -f locustfile.py --host=https://<your-service-name>.azurewebsites.net \
-	--no-web -c 1000 -r 100
+	--no-web --user 1000 -r 100
 # With Locust running we can open the web user interface 
 # at: https://<your-service-name>.azurewebsites.net:8089
 
