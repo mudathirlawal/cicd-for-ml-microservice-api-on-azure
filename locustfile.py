@@ -16,3 +16,4 @@ class APIUser(HttpUser):
     task = CallerActions
     min_wait = 5000
     max_wait = 9000
+    host = "https://boston-api.azurewebsites.net:8089/"
