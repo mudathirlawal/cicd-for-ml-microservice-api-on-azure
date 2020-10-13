@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, json
 from flask.logging import create_logger
 import logging
 
@@ -23,7 +23,6 @@ def home():
     html = "<h3>Sklearn Prediction Home</h3>"
     return html.format(format)
 
-# TO DO:  Log out the prediction value
 @app.route("/predict", methods=['POST'])
 def predict():
     """Performs an sklearn prediction
@@ -66,7 +65,16 @@ def predict():
     LOG.info("inference payload DataFrame: %s inference_payload")
     scaled_payload = scale(inference_payload)
     prediction = list(clf.predict(scaled_payload))
-    return jsonify({'prediction': prediction})
+    jsonified_prediction = jsonify({'prediction': prediction})
+    
+    log_prediction_value(jsonified_prediction):
+        json_data_in_dict_form = json.loads(jsonified_prediction)
+        prediction_value_list = json_data_in_dict_form["prediction"]
+        for prediction_value in prediction_value_list:
+            LOG.info(prediction_value)
+
+    log_prediction_value(jsonified_prediction)
+    return jsonified_prediction
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True) 
