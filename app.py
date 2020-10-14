@@ -67,7 +67,7 @@ def predict():
     prediction = list(clf.predict(scaled_payload))
     jsonified_prediction = jsonify({'prediction': prediction})
     
-    log_prediction_value(jsonified_prediction):
+    def log_prediction_value(jsonified_prediction):
         json_data_in_dict_form = json.loads(jsonified_prediction)
         prediction_value_list = json_data_in_dict_form["prediction"]
         for prediction_value in prediction_value_list:
