@@ -123,10 +123,10 @@ deployment of the microservice API.
 
 ```shell
 sudo apt-get install python3-venv  # If needed 
-python3 -m venv .env
-source .env/bin/activate
+python3 -m venv ~/.cicd-for-ml-microservice-api-on-azure
+source ~/.cicd-for-ml-microservice-api-on-azure/bin/activate
 pip install -r requirements.txt
-export set FLASK_APP=app.webapp
+export set FLASK_APP=app.py
 python3 -m flask run
 ```
 
@@ -136,7 +136,7 @@ python3 -m flask run
 py -3 -m venv .env
 .env\scripts\activate
 pip install -r requirements.txt
-$env:FLASK_APP = "app.webapp"
+$env:FLASK_APP = "app.py"
 python -m flask run
 ```
 
