@@ -266,7 +266,7 @@ the dataset training stage in the pipeline by employing the Azure Kubernetes Ser
 leveraging relevant tools such as TensorFlow and KubeFlow to simplify the operation. In this architecture, 
 the models will run in AKS clusters backed by GPU-enabled virtual machines.
 
-For further information on this, see [Machine Learning model training with AKS,](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/machine-learning-with-aks) by Microsoft.
+For further information on this, see [Machine Learning model training with AKS](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/machine-learning-with-aks) by Microsoft.
 
 ## References
 
