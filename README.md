@@ -134,7 +134,7 @@ az webapp config set -g <your-resource-group> -n <your-appservice-name>
 export set FLASK_APP=app.py
 python3 -m flask run
 ./make_prediction_on_azure.sh   # Make a prediction by running this script.
-# To see the running app, open a browser and got to:
+# To see the running app, open a browser and go to:
 # http://<your-appservice-name>.azurewebsites.net
 ```
 
