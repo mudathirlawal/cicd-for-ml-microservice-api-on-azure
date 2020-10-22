@@ -20,7 +20,7 @@ those used for image recognition and data labeling.
 ## Project Plan
 
 - [Link to Trello board for this project.](https://trello.com/b/IeN7udTH/ci-cd-for-ml-microservice-api-on-azure)
-- [Link to spreadsheet that includes the project plan for this project.](https://docs.google.com/spreadsheets/d/1BEQnOTNx_PSh0zwm3Q15BGol5n4bmwO2J6IBVqrMSo0/edit?usp=sharing)
+- [Link to spreadsheet that includes the initial and future plans for this project.](https://docs.google.com/spreadsheets/d/1BEQnOTNx_PSh0zwm3Q15BGol5n4bmwO2J6IBVqrMSo0/edit?usp=sharing)
 
 ![alt text](/readme-images/building-a-ci-cd-pipeline.png)
 
@@ -122,12 +122,19 @@ deployment of the microservice API.
 ### Bash: Run app in a virtual environment within Azure Cloud Shell
 
 ```shell
-sudo apt-get install python3-venv  # If needed 
+cd ~
+sudo apt-get install python3-venv  # If needed; not needed in Azure Cloud Shell
+git clone https://github.com/<your-alias>/cicd-for-ml-microservice-api-on-azure
+cd cicd-for-ml-microservice-api-on-azure
 python3 -m venv ~/.cicd-for-ml-microservice-api-on-azure
 source ~/.cicd-for-ml-microservice-api-on-azure/bin/activate
 make all
+az webapp up -n <your-desired-name-for-the-appservice>
+az webapp config set -g <your-resource-group> \
+    -n <your-appservice-name>
 export set FLASK_APP=app.py
 python3 -m flask run
+./make_prediction_on_azure.sh
 ```
 
 ### PowerShell: Run app in a virtual environment within Azure Cloud Shell
