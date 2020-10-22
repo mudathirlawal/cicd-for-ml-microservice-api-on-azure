@@ -130,11 +130,12 @@ python3 -m venv ~/.cicd-for-ml-microservice-api-on-azure
 source ~/.cicd-for-ml-microservice-api-on-azure/bin/activate
 make all
 az webapp up -n <your-desired-name-for-the-appservice>
-az webapp config set -g <your-resource-group> \
-    -n <your-appservice-name>
+az webapp config set -g <your-resource-group> -n <your-appservice-name>
 export set FLASK_APP=app.py
 python3 -m flask run
-./make_prediction_on_azure.sh
+./make_prediction_on_azure.sh   # Make a prediction by running this script.
+# To see the running app, open a browser and got to:
+# http://<your-appservice-name>.azurewebsites.net
 ```
 
 ### PowerShell: Run app in a virtual environment within Azure Cloud Shell
