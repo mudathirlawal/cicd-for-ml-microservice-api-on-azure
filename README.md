@@ -119,7 +119,7 @@ deployment of the microservice API.
    If you see a generic page, wait a few seconds for the App Service to start, and refresh the 
    page.
 
-### Bash: Run app in a virtual environment within Azure Cloud Shell
+### Bash: Run app in a virtual environment within Azure Cloud Shell or Linux
 
 ```shell
 cd ~
