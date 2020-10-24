@@ -1,0 +1,117 @@
+
+(.cicd-for-ml-microservice-api-on-azure) aminat@Azure:~/cicd-for-ml-microservice-api-on-azure$ az webapp log tail
+2020-10-23T19:21:06  Welcome, you are now connected to log-streaming service.
+
+Starting Log Tail -n 10 of existing logs ----
+
+/home/LogFiles/__lastCheckTime.txt  (https://boston-api.scm.azurewebsites.net/api/vfs/LogFiles/__lastCheckTime.txt)
+
+2020-10-23T19:12:53.992684414Z
+2020-10-23T19:12:53.992707714Z   _____
+2020-10-23T19:12:53.992712414Z   /  _  \ __________ _________   ____
+2020-10-23T19:12:53.992715414Z  /  /_\  \___   /  |  \_  __ \_/ __ \
+2020-10-23T19:12:53.992718614Z /    |    \/    /|  |  /|  | \/\  ___/
+2020-10-23T19:12:53.992721614Z \____|__  /_____ \____/ |__|    \___  >
+2020-10-23T19:12:53.992731314Z         \/      \/                  \/
+2020-10-23T19:12:53.992734514Z
+2020-10-23T19:12:53.992737214Z A P P   S E R V I C E   O N   L I N U X
+2020-10-23T19:12:53.992740114Z
+2020-10-23T19:12:53.992742914Z Documentation: http://aka.ms/webapp-linux
+2020-10-23T19:12:53.992745814Z Python 3.7.9
+2020-10-23T19:12:53.992748714Z Note: Any data outside '/home' is not persisted
+2020-10-23T19:12:54.098303389Z Starting OpenBSD Secure Shell server: sshd.
+2020-10-23T19:12:54.124210008Z App Command Line not configured, will attempt auto-detect
+2020-10-23T19:12:54.125613409Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -bindPort 8000
+2020-10-23T19:12:54.139723619Z Cound not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2020-10-23T19:12:54.140178520Z Could not find operation ID in manifest. Generating an operation id...
+2020-10-23T19:12:54.140619020Z Build Operation ID: 6140ad6c-a698-4d4d-a230-0dc8e8f44048
+2020-10-23T19:12:54.695199118Z Oryx Version: 0.2.20200917.1, Commit: 59deb778658a124cb74ea8e2c8f39fa87abcc9d9, ReleaseTagName: 20200917.1
+2020-10-23T19:12:54.703556124Z No framework detected; using default app from /opt/defaultsite
+2020-10-23T19:12:54.704139925Z Generating `gunicorn` command for 'application:app'
+2020-10-23T19:12:54.983040625Z Writing output script to '/opt/startup/startup.sh'
+2020-10-23T19:12:55.296146450Z WARNING: Could not find virtual environment directory /home/site/wwwroot/antenv.
+2020-10-23T19:12:55.297123251Z WARNING: Could not find package directory /home/site/wwwroot/__oryx_packages__.
+2020-10-23T19:12:55.688981232Z [2020-10-23 19:12:55 +0000] [35] [INFO] Starting gunicorn 20.0.4
+2020-10-23T19:12:55.691284334Z [2020-10-23 19:12:55 +0000] [35] [INFO] Listening at: http://0.0.0.0:8000 (35)
+2020-10-23T19:12:55.693059835Z [2020-10-23 19:12:55 +0000] [35] [INFO] Using worker: sync
+2020-10-23T19:12:55.699739540Z [2020-10-23 19:12:55 +0000] [38] [INFO] Booting worker with pid: 38
+2020-10-23T19:12:56.049724091Z 172.16.10.1 - - [23/Oct/2020:19:12:56 +0000] "GET /robots933456.txt HTTP/1.1" 404 232 "-" "-"
+
+2020-10-23T19:13:04.017524834Z 172.16.10.1 - - [23/Oct/2020:19:13:04 +0000] "GET / HTTP/1.1" 200 0 "-" "AlwaysOn"
+
+2020-10-23T19:14:41.916430311Z
+2020-10-23T19:14:41.916498611Z   _____
+2020-10-23T19:14:41.916505411Z   /  _  \ __________ _________   ____
+2020-10-23T19:14:41.916509511Z  /  /_\  \___   /  |  \_  __ \_/ __ \
+2020-10-23T19:14:41.916513712Z /    |    \/    /|  |  /|  | \/\  ___/
+2020-10-23T19:14:41.916517612Z \____|__  /_____ \____/ |__|    \___  >
+2020-10-23T19:14:41.916521712Z         \/      \/                  \/
+2020-10-23T19:14:41.916525612Z
+2020-10-23T19:14:41.916529012Z A P P   S E R V I C E   O N   L I N U X
+2020-10-23T19:14:41.916532712Z
+2020-10-23T19:14:41.916536112Z Documentation: http://aka.ms/webapp-linux
+2020-10-23T19:14:41.916539812Z Python 3.7.9
+2020-10-23T19:14:41.916543412Z Note: Any data outside '/home' is not persisted
+2020-10-23T19:14:42.090120013Z Starting OpenBSD Secure Shell server: sshd.
+2020-10-23T19:14:42.108647610Z App Command Line not configured, will attempt auto-detect
+2020-10-23T19:14:42.109353113Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -bindPort 8000
+2020-10-23T19:14:42.129888920Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2020-10-23T19:14:42.132873536Z Build Operation ID: |Osk+HDzwLjg=.206270ef_
+2020-10-23T19:14:42.133913941Z Oryx Version: 0.2.20200917.1, Commit: 59deb778658a124cb74ea8e2c8f39fa87abcc9d9, ReleaseTagName: 20200917.1
+2020-10-23T19:14:42.558996549Z Detected an app based on Flask
+2020-10-23T19:14:42.560691058Z Generating `gunicorn` command for 'app:app'
+2020-10-23T19:14:42.930388579Z Writing output script to '/opt/startup/startup.sh'
+2020-10-23T19:14:43.359333707Z Found virtual environment .tar.gz archive.
+2020-10-23T19:14:43.360059411Z Removing existing virtual environment directory /antenv...
+2020-10-23T19:14:43.367742351Z Extracting to directory /antenv...
+2020-10-23T19:14:50.362336041Z Using packages from virtual environment antenv located at /antenv.
+2020-10-23T19:14:50.362532542Z Updated PYTHONPATH to ':/antenv/lib/python3.7/site-packages'
+2020-10-23T19:14:59.631317207Z [2020-10-23 19:14:59 +0000] [40] [INFO] Starting gunicorn 20.0.4
+2020-10-23T19:14:59.635161729Z [2020-10-23 19:14:59 +0000] [40] [INFO] Listening at: http://0.0.0.0:8000 (40)
+2020-10-23T19:14:59.640810663Z [2020-10-23 19:14:59 +0000] [40] [INFO] Using worker: sync
+2020-10-23T19:14:59.649670515Z [2020-10-23 19:14:59 +0000] [43] [INFO] Booting worker with pid: 43
+2020-10-23T19:15:00.863005262Z 172.16.10.1 - - [23/Oct/2020:19:15:00 +0000] "GET /robots933456.txt HTTP/1.1" 404 232 "-" "-"
+
+2020-10-23T19:16:14.200934208Z 172.16.10.1 - - [23/Oct/2020:19:16:14 +0000] "GET / HTTP/1.1" 200 32 "-" "AlwaysOn"
+
+2020-10-23T19:16:24.170653238Z 172.16.10.1 - - [23/Oct/2020:19:16:24 +0000] "GET / HTTP/1.1" 200 32 "-" "AlwaysOn"
+
+2020-10-23T19:19:23.087079548Z [2020-10-23 19:19:23,086] INFO in app: JSON payload: %s json_payload
+2020-10-23T19:19:23.089635962Z [2020-10-23 19:19:23,088] INFO in app: inference payload DataFrame: %s inference_payload
+2020-10-23T19:19:23.096528802Z [2020-10-23 19:19:23,089] INFO in app: Scaling Payload: %s payload
+2020-10-23T19:19:23.129196591Z 172.16.10.1 - - [23/Oct/2020:19:19:23 +0000] "POST /predict HTTP/1.1" 200 35 "-" "curl/7.47.0"
+
+10/23/20 7:12:46 PM
+
+
+Ending Log Tail of existing logs ---
+
+Starting Live Log Stream ---
+
+2020-10-23T19:12:34.883Z INFO  - Starting container for site
+2020-10-23T19:12:34.883Z INFO  - docker run -d -p 10000:8000 --name boston-api_0_238c782b -e WEBSITE_SITE_NAME=boston-api -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=boston-api.azurewebsites.net -e WEBSITE_INSTANCE_ID=46531dc34ca5c78904824aa75f3a55a751630d00815ce4267002d57ea1f42f5d appsvc/python:3.7_20200918.1
+
+2020-10-23T19:12:34.883Z INFO  - Logging is not enabled for this container.
+Please use https://aka.ms/linux-diagnostics to enable logging to see container logs here.
+2020-10-23T19:12:35.623Z INFO  - Initiating warmup request to container boston-api_0_238c782b for site boston-api
+2020-10-23T19:12:38.647Z INFO  - Container boston-api_0_238c782b for site boston-api initialized successfully and is ready to serve requests.
+2020-10-23T19:12:52.624Z INFO  - Recycling container because of HttpLoggingEnabledChange and httpLoggingEnabled = True
+2020-10-23T19:12:52.639Z INFO  - Starting container for site
+2020-10-23T19:12:52.639Z INFO  - docker run -d -p 2832:8000 --name boston-api_1_bb37c58c -e WEBSITE_SITE_NAME=boston-api -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=boston-api.azurewebsites.net -e WEBSITE_INSTANCE_ID=46531dc34ca5c78904824aa75f3a55a751630d00815ce4267002d57ea1f42f5d -e HTTP_LOGGING_ENABLED=1 appsvc/python:3.7_20200918.1
+
+2020-10-23T19:12:54.025Z INFO  - Initiating warmup request to container boston-api_1_bb37c58c for site boston-api
+2020-10-23T19:12:56.040Z INFO  - Container boston-api_1_bb37c58c for site boston-api initialized successfully and is ready to serve requests.
+2020-10-23T19:14:38.896Z INFO  - Starting container for site
+2020-10-23T19:14:38.897Z INFO  - docker run -d -p 9811:8000 --name boston-api_2_52cc1198 -e WEBSITE_SITE_NAME=boston-api -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=boston-api.azurewebsites.net -e WEBSITE_INSTANCE_ID=46531dc34ca5c78904824aa75f3a55a751630d00815ce4267002d57ea1f42f5d -e HTTP_LOGGING_ENABLED=1 appsvc/python:3.7_20200918.1
+
+2020-10-23T19:14:41.861Z INFO  - Initiating warmup request to container boston-api_2_52cc1198 for site boston-api
+2020-10-23T19:14:57.044Z INFO  - Waiting for response to warmup request for container boston-api_2_52cc1198. Elapsed time = 15.1832024 sec
+2020-10-23T19:15:00.855Z INFO  - Container boston-api_2_52cc1198 for site boston-api initialized successfully and is ready to serve requests.
+2020-10-23T19:16:13.159Z INFO  - Recycling container because of AppSettingsChange and isMainSite = True
+2020-10-23T19:16:13.176Z INFO  - Starting container for site
+2020-10-23T19:16:13.180Z INFO  - docker run -d -p 1351:8000 --name boston-api_3_31aa79c0 -e WEBSITE_SITE_NAME=boston-api -e WEBSITE_AUTH_ENABLED=False -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=boston-api.azurewebsites.net -e WEBSITE_INSTANCE_ID=46531dc34ca5c78904824aa75f3a55a751630d00815ce4267002d57ea1f42f5d -e HTTP_LOGGING_ENABLED=1 appsvc/python:3.7_20200918.1
+
+2020-10-23T19:16:16.068Z INFO  - Initiating warmup request to container boston-api_3_31aa79c0 for site boston-api
+2020-10-23T19:16:36.165Z INFO  - Container boston-api_3_31aa79c0 for site boston-api initialized successfully and is ready to serve requests.
+
+2020-10-23T19:21:34.423378470Z 172.16.10.1 - - [23/Oct/2020:19:21:34 +0000] "GET / HTTP/1.1" 200 32 "-" "AlwaysOn"
