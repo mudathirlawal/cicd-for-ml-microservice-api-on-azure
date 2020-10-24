@@ -1,6 +1,6 @@
 # CI/CD for Machine Learning Microservice API on Azure
 [![Build Status](https://dev.azure.com/smartkidshub/ml-microservice-api/_apis/build/status/mudathirlawal.cicd-for-ml-microservice-api-on-azure?branchName=ops)](https://dev.azure.com/smartkidshub/ml-microservice-api/_build/latest?definitionId=1&branchName=ops)
-![Python application test with Github Actions](https://github.com/mudathirlawal/cicd-for-ml-microservice-api-on-azure/workflows/Python+application+test+with+Github+Actions/badge.svg)
+![Python application test with Github Actions](https://github.com/mudathirlawal/cicd-for-ml-microservice-api-on-azure/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
 
 ## Overview
 
@@ -24,7 +24,7 @@ those used for image recognition and data labeling.
 
 ![alt text](/readme-images/building-a-ci-cd-pipeline.png)
 
-## Demo
+## Workflow Demo
 
 - [Link to YouTube video demonstrating project workflow.](https://youtu.be/M-5W-2PDM-o)
 
